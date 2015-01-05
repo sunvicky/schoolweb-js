@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>山东财经大学</title>
+<meta charset='UTF-8'>
+<style type="text/css">
+  a:link{text-decoration: none;color: #FFFFFF;}  /*未被访问的链接*/
+  a:visited{text-decoration: none;color: #FFFFFF;}/*已被访问的链接*/
+  a:hover{text-decoration: underline;color: #FFFFFF;}/*鼠标指针移动到连接上*/
+  a:active{text-decoration: underline;color: #FFFFFF;}/*正在被点击的链接*/
+  a.right:hover{text-decoration: underline;color: #1D4A03}
+  a.right:active{text-decoration: underline;color: #1D4A03}
+  a.content:link{text-decoration: none;color: #000000;}
+  a.content:visited{text-decoration: none;color: #000000;}
+  a.content:hover{text-decoration: underline;color: #FF0000;}
+  a.content:active{text-decoration: underline;color: #FF0000;}
+body{
+  background-image:url(image/main_bg.gif);
+  background-repeat: repeat-x;
+  padding: 0px;
+  margin: 0px;
+}
+#wrapper{
+  margin: 0px auto;
+  width: 956px;
+  height: 742px;
+}
+#header{
+  width: 956px;
+  height: 100px;
+  background-image: url(image/sdufe_top1.jpg);
+}
+.header1{
+  padding: 4px 10px 0px 4px;
+  float: right;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+.header2{
+  float: right;
+  padding: 0px;
+}
+.header3{
+  float: right;
+  width: 956px;
+  height: 50px;
+}
+.header4{
+  height: 22px;
+  float: right;
+}
+#nav{
+  height: 31px;
+  width: 956px;
+  padding: 0 0 10px 0;
+}
+.nav1{
+  float: left;
+  width: 10px;
+  height: 31px;
+  background-image: url("image/menu_left.jpg");
+}
+.nav2{
+  float: left;
+  width: 936px;
+  height: 31px;
+  background-image: url("image/menu_bg.jpg");
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 28px;
+}
+.nav3{
+  float: left;
+  width: 10px;
+  height: 31px;
+  background-image:url("image/menu_right.jpg");
+}
+#left{
+	width: 264px;
+	height: 497px;
+	float: left;
+}
+#left1{
+  position: relative;
+  width: 264px;
+  height: 403px;
+}
+.left2{
+  margin-top: 10px;
+  width: 262px;
+  height: 84px;
+}
+.left3{
+  float: left;
+}
+#arrow_left{
+  position: absolute;
+  left: 0px;
+  top: 200px;
+  z-index: 2;
+}
+#arrow_right{
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  z-index: 2;
+}
+#left_button{
+  position: absolute; 
+  height: 10px; 
+  width: 100px; 
+  z-index: 2; 
+  bottom: 10px; 
+  left: 65px;
+}
+#left_button li{
+  list-style: none;
+  cursor: pointer; 
+  float: left;  
+  width: 10px; 
+  height: 10px; 
+  border-radius: 50%; 
+  background: #B7B7B7; 
+  margin-right: 5px;
+}
+#left_button li:hover{
+  background-color: #FF4400;
+}
+#left_button li.selected{
+  background-color: #FF4400;
+}
+#left_nav{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1;
+}
+#left_nav li{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  background-color:#ccc;
+  border:1px solid red;
+  cursor:pointer; 
+}
+#left_cont li{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  list-style: none;
+  width: 264px;
+}
+#left_cont{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#content{
+  padding: 0px 0px 0px 20px;
+  width: 440px;
+  height: 500px;
+  margin: 0 2px 0 262px;
+}
+.content1{
+  float: left;
+  width: 80px;
+  height: 24px;
+  background-image:url("image/btn1.png");
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px; 
+}
+.content2{
+  float: left;
+  width: 80px;
+  height: 24px;
+  background-image:url("image/btn2.png"); 
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+}
+.content3{
+  float: right;
+  font-size: 13px;
+  padding: 4px 10px;
+}
+.content4{
+  float: left;
+  width: 431px;
+  height: 3px;
+  background-color: #0091DF;
+}
+.content5{
+  float: left;
+  font-size: 12px;
+  line-height: 25px;
+}
+.content6{
+  float: right;
+  padding-right: 20px;
+  color: #888888;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+}
+#right{
+  float: right;
+}
+.right1{
+  float: left;
+  width: 106px;
+  height: 182px;
+}
+.right2{
+  float: left;
+  width: 106px;
+  height: 82px;
+}
+li p{
+  color: #1D4A03;
+  font-size: 12px;
+  line-height: 10px;
+}
+#right ul{
+  padding-left:25px;
+  margin: 0px 5px;
+  list-style-image: url('image/narrow.gif');
+}
+#footer{
+  width: 
+}
+.footer1{
+  width: 271px;
+  height: 10px;
+  background: url("image/bottom_top.jpg");
+}
+.footer2{
+  height: 27px;
+  float: left;
+}
+.footer3{
+  float: left;
+  background-color: #004aaa;
+  width: 450px;
+  height: 27px;
+}
+.footer3 span{
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bolder;
+  margin: 0 5px;
+}
+.footer4{
+  float: left;
+  background-color: #004aaa;
+  width: 500px;
+  height: 27px;
+}
+.footer4 span{
+  float: right;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin: 6px 8px 0px 0px;
+}
+.footer5{
+  height: 27px;
+}
+.footer6{
+  width: 956px;
+  height: 60px;
+  background-color: #F7F7F7;
+}
+.footer7{
+  width: 178px;
+  height: 14px;
+  margin: 15px auto 0px auto;
+}
+.footer6 span{
+  margin: 0px 406px;
+  color: #555555;
+  font-size: 12px;
+}
+</style>
+
+</head>
+<body onload="autoTabStart()">
+  <div id="wrapper">
+  	<div id="header">
+    <div class="header1"><a href="http://www.sdufe.edu.cn/sdufe/site_map.php">网站地图</a></div>
+    <div class="header2"><img src="image/arrow.gif"></div>
+    <div class="header3"></div>
+    <div class="header4"><a href="http://pub.sdufe.edu.cn/news/search.php"><image src="image/search.jpg" style="width:23px;height:22px;"></a></div>
+    <div class="header4"><input type="text" value="站内搜索" style="width:150px;height:16px"></div></div>
+    <div id="nav">
+      <div class="nav1"></div>
+      <div class="nav2">
+        <span style="padding:0px 1px 0px 0px;">首页</span>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/sdufe_intro.php">学校概况</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://pub.sdufe.edu.cn/news">新闻资讯</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/organ_main.php">机构设置</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/speciality_under.php">学院专业</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/teacher_main.php">师资队伍</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/train_main.php">人才培养</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/research_main.php">科学研究</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/subject_main.php">学科建设</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://international.sdufe.edu.cn/international/index.htm">国际交流</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/recruit_main.php">招生就业</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://lib.sdufe.edu.cn/">图书资料</a>
+        <span><img src="image/menu_split.jpg"></span>
+        <a style="padding:0px 1px;" href="http://www.sdufe.edu.cn/sdufe/campus_main.php">走进校园</a>
+      </div>
+      <div class="nav3"></div>
+    </div>
+
+    <div id="left" onmouseover="autoTabStop()" onmouseout="autoTabStart()">   	
+      <div id="left1" onmouseover="mOver()" onmouseout="mOut()">
+        <div id="arrow" style="display:none;">
+          <a id="arrow_left"  href="javascript:void(0)" onclick="move(false)"><img src="image/arrl.png"></a>
+          <a id="arrow_right"  href="javascript:void(0)" onclick="move(true)"><img src="image/arrr.png"></a>
+        </div>
+        <ul id="left_button">
+            <li class="selected" onmouseover=show(0)></li>
+            <li class="" onmouseover=show(1)></li>
+            <li class="" onmouseover=show(2)></li>
+            <li class="" onmouseover=show(3)></li>
+        </ul>
+        <ul id="left_cont">
+          <li style="display:block;"><a href=""><img src="image/1.jpg"/></a></li>
+          <li style="display:none;"><a href=""><img src="image/2.jpg"/></a></li>
+          <li style="display:none;"><a href=""><img src="image/3.jpg"/></a></li>
+          <li style="display:none;"><a href=""><img src="image/4.jpg"/></a></li>
+        </ul>
+      </div>
+
+    	<div class="left2">
+        <div class="left3"><img src="image/special_web.jpg"></div>
+        <div class="left3"><a href="http://web5.sdufe.edu.cn/zlgc/"><img src="image/web01.jpg"></a></div>
+        <div class="left3"><a href="http://international.sdufe.edu.cn/hezuobanxue/index.htm"><img src="image/web02.jpg">  </a></div>
+      </div>
+    </div>
+    <div id="right">
+      <div ><a href="http://www2.sdufe.edu.cn/xcbqzlx/"><img style="width:222px;height:167px;border:solid 1px #000;" src="image/xcb.jpg"></a></div>
+      <div><a href="http://www.sdufe.edu.cn/sdufe/info_main.php"><img style="width:218px;height:30px;margin:5px 0px 0px 0px;" src="image/kstd.jpg"></a></div>
+      <div class="right1">
+        <ul>
+          <li><a class="right" href="http://oa.sdufe.edu.cn/login.php?go=%2Findex.php"><p>办公系统</p></a></li>
+          <li><a class="right" href="http://oa.sdfi.edu.cn/class/login.php?go=/class/index.php&filter="><p>网上课堂</p></a></li>
+          <li><a class="right" href="http://123.232.100.110:94/"><p>教务管理</p></a></li>
+          <li><a class="right" href="http://mail.sdufe.edu.cn/"><p>财大邮箱</p></a></li>
+          <li><a class="right" href="http://pub.sdufe.edu.cn/gjxx/"><p>高教信息</p></a></li>
+          <li><a class="right" href="http://pub.sdufe.edu.cn/jyjjh/"><p>教育基金会</p></a></li>
+          <li><a class="right" href="http://www.sdufe.edu.cn/sdufe/info_main.php"><p>信息服务</p></a></li>
+        </ul>
+      </div>
+      <div class="right1">
+        <ul>
+          <li><a class="right" href="http://filex.sdufe.edu.cn/"><p>文件交换</p></a></li>
+          <li><a class="right" href="http://web5.sdufe.edu.cn/jpkc/"><p>精品课程</p></a></li>
+          <li><a class="right" href="http://210.44.128.171/login"><p>研究生管理</p></a></li>
+          <li><a class="right" href="http://pub.sdufe.edu.cn/news/search.php?search_key=%D1%A7%CA%F5%B1%A8%B8%E6"><p>学术报告</p></a></li>
+          <li><a class="right" href="http://web5.sdufe.edu.cn:8080/db/plus/diy.php?action=post&diyid=2"><p>智库专题</p></a></li>
+          <li><a class="right" href="http://pub.sdufe.edu.cn/xyzh/"><p>校友总会</p></a></li>
+          <li><a class="right" href="http://www2.sdufe.edu.cn/xxgk/"><p style="color:red;font-weight:bold;">信息公开</p></a></li>
+        </ul>
+      </div>
+      <div><a href="http://www.sdufe.edu.cn/sdufe/campus_main.php"><img src="image/zjxy.jpg"></a></div>
+      <div class="right2">
+        <ul>
+          <li><a class="right" href="http://filex.sdufe.edu.cn/map/"><p class="way">校园地图</p></a></li>
+          <li><a class="right" href="http://www.sdufe.edu.cn/sdufe/campus_banche.php"><p class="way">校区班车</p></a></li>
+          <li><a class="right" href="http://pub.sdufe.edu.cn/info/tel.htm"><p class="way">校园电话</p></a></li>
+        </ul>
+      </div>
+      <div class="right2">
+        <ul>
+          <li><a class="right" href="http://www.sdufe.edu.cn/sdufe/schedule/2014-2015-01.rar"><p class="way">总课程表</p></a></li>
+          <li><a class="right" href="http://www.sdufe.edu.cn/sdufe/campus_calendar.php"><p class="way">最新校历</p></a></li>
+          <li><a class="right" href="http://www.sdufe.edu.cn/sdufe/campus_bus.php"><p class="way">公交路线</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div style="width:16px;height:24px;float:left"></div>
+      <div class="content1"><a href="">新闻聚焦</a></div>
+      <div class="content2">新闻速览</div>
+      <div class="content3"><a style="color:#666" href="http://pub.sdufe.edu.cn/news/">更多>></a></div>
+      <div class="content4"></div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17546">&nbsp;2014年“凝心聚力杯”教职工羽毛球比赛落幕</a>
+      </div>
+      <div class="content6">11-14</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17531">&nbsp;“金融产业优化与区域发展管理协同创新中心”第二批立…</a>
+      </div>
+      <div class="content6">11-13</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17499">&nbsp;赵叶青客座教授聘任仪式暨大学生就业指导报告举行</a></div>
+      <div class="content6">11-13</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17470">&nbsp;加拿大达尔豪斯大学校长率团访问我校并做学术交流</a></div>
+      <div class="content6">11-12</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17469">&nbsp;学校第二届本科教学督导委员会成立并召开第一次工作会…</a></div>
+      <div class="content6">11-12</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17352">&nbsp;省委第一专项巡视组巡视山东财经大学工作动员会召开</a></div>
+      <div class="content6">11-10</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17307">&nbsp;百家讲坛主讲人金正昆教授做客“公共管理大讲堂”</a></div>
+      <div class="content6">11-10</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17306">&nbsp;艺术学院举办2013级太行山写生作品竞拍会</a></div>
+      <div class="content6">11-10</div>
+      <div style="width:480px;height:6px;float:left"></div>
+      <div style="width:16px;height:24px;float:left"></div>
+      <div class="content1"><a href="">通知公告</a></div>
+      <div class="content2">争鸣苑</div>
+      <div class="content3"><a style="color:#666" href="http://pub.sdufe.edu.cn/news/">更多>></a></div>
+      <div class="content4"></div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17273">&nbsp;关于评选山东财经大学“年度科研贡献奖（2014）”的通…</a></div>
+      <div class="content6">11-10</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17560">&nbsp;校长奖学金获奖名单公示</a></div>
+      <div class="content6">11-14</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17555">&nbsp;讲座预告：山东财经大学经济论坛第三十四讲</a></div>
+      <div class="content6">11-14</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17540">&nbsp;征稿启事</a></div>
+      <div class="content6">11-14</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17454">&nbsp;“成长.成才”大讲堂讲座通知（第五十三期）</a></div>
+      <div class="content6">11-12</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17439">&nbsp;研究生职业生涯规划系列讲座――我的职业我做主</a></div>
+      <div class="content6">11-12</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17423">&nbsp;关于做好冬季防火工作的通知</a></div>
+      <div class="content6">11-12</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17414">&nbsp;关于查询领取第40次全国计算机等级考试成绩和证书的通…</a></div>
+      <div class="content6">11-12</div>
+      <div class="content5">
+        <img src="image/list.gif">
+        <a class="content" href="http://pub.sdufe.edu.cn/news/view.php?id=17403">&nbsp;学术报告预告：“泰山学者”金融讲坛之二十三</a></div>
+      <div class="content6">11-11</div>
+    </div>
+    <div id="footer">
+      <div class="footer1"></div>
+      <div class="footer2"><img src="image/bottom_left.jpg"></div>
+      <div class="footer3">
+        <a href="http://v.qq.com/boke/page/v/0/7/v013173uqd7.html"><span>2014年毕业纪念册</span></a>
+        <a href="http://123.232.100.72/djks/test/2014.rar"><span>2014年毕业照片</span></a>
+      </div>
+      <div class="footer4">
+        <a href="http://www.sdor.cn/"><span>东方学院</span></a>
+        <a href="http://www.yanshanxueyuan.com/"><span>燕山学院  |</span></a>
+        <a href="http://202.194.240.198/index.asp"><span>原山东财政学院  |</span></a>
+        <a href="http://202.194.240.198/index.asp"><span>原山东经济学院  |</span></a>
+      </div>
+      <div class="footer5"><img src="image/bottom_right.jpg"></div>
+      <div class="footer6">
+        <div class="footer7"><img src="image/email.jpg"></div>
+        <div><span>版权所有 © 山东财经大学</span></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var buttons=document.getElementById('left_button').getElementsByTagName('li');
+  var conts=document.getElementById('left_cont').getElementsByTagName('li');
+  var index,focusTimeHandler;
+
+  var mOver=function(){document.getElementById('arrow').style.display="block";}
+  var mOut=function(){document.getElementById('arrow').style.display="none";}
+  var getCurIndex=function(){
+    for (var i = 0; i < buttons.length; i++) {
+      if (buttons[i].className.indexOf('selected')!=-1) {
+          return i;
+        }
+      }
+    }
+  var move=function(flag){
+    index=getCurIndex();
+    if (flag==true) {
+      index++;
+      if(index>=conts.length){
+        index=0;
+      }
+    } 
+      else{
+        index--;
+        if(index<=0){
+          index=conts.length-1;
+        }
+      }
+    show(index);
+  }
+  var show=function(index){
+    for(var j=0;j<buttons.length;j++){
+      if(j==index){
+         buttons[index].className="selected";
+         conts[index].style.display="block";
+      }
+      else{
+         buttons[j].className="";
+         conts[j].style.display="none";
+      }
+    }
+  }
+  var autoTabStart = function()
+  {
+    focusTimeHandler=setInterval(function(){move(true);},1000);
+  }
+  var autoTabStop = function(){
+    clearInterval(focusTimeHandler);
+  }
+  </script>
+</body>
+</html>
